@@ -2,9 +2,17 @@
 
 A full-stack URL shortener with real click analytics, Redis caching, and Redis-backed rate limiting — built to demonstrate backend engineering and system design, not just CRUD.
 
-**Live app:** [your-frontend-url.vercel.app](https://your-frontend-url.vercel.app)  
+**Live app:** [your-frontend-url.vercel.app]((https://url-shortener-amber-eta.vercel.app/))  
 
 > Backend is on Render's free tier, which sleeps after 15 minutes of inactivity — the first request after a while can take 30–60 seconds to wake it up.
+
+---
+
+## Screenshots
+
+![Screenshot 1](./screenshots/1.png)
+![Screenshot 1](./screenshots/2.png)
+![Screenshot 1](./screenshots/3.png)
 
 ---
 
@@ -16,6 +24,8 @@ A full-stack URL shortener with real click analytics, Redis caching, and Redis-b
 - Redis-cached redirects with graceful fallback to Postgres if Redis is unavailable
 - Redis-backed sliding-window rate limiting on link creation
 - Enable/disable and delete links
+
+---
 
 ## Tech stack
 
@@ -122,17 +132,6 @@ npm run dev                 # http://localhost:5173
 ## Security
 
 Helmet security headers · CORS restricted to an explicit origin allowlist · parameterized SQL throughout · URL protocol restricted to http/https, capped at 2048 chars · `trust proxy` set to exactly 1 hop (matching Render's topology, so client IPs used for rate limiting/geolocation aren't spoofable) · malformed JSON returns a clean 400 · Redis/Postgres failures degrade gracefully rather than crashing · graceful shutdown on `SIGTERM`.
-
----
-
-
-## Screenshots
-
-<!-- Drag and drop images here in the GitHub web editor, e.g.: ![Dashboard](./screenshots/dashboard.png) -->
-
-**Dashboard**
-
-**Analytics page**
 
 ---
 
