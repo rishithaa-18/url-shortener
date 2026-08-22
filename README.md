@@ -10,9 +10,9 @@ A full-stack URL shortener with real click analytics, Redis caching, and Redis-b
 
 ## Screenshots
 
-![Screenshot 1](./screenshots/1.png)
-![Screenshot 1](./screenshots/2.png)
-![Screenshot 1](./screenshots/3.png)
+![Screenshot 1](./screesnhots/1.png)
+![Screenshot 1](./screesnhots/2.png)
+![Screenshot 1](./screesnhots/3.png)
 
 ---
 
