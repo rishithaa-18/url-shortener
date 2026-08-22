@@ -2,7 +2,7 @@
 
 A full-stack URL shortener with real click analytics, Redis caching, and Redis-backed rate limiting — built to demonstrate backend engineering and system design, not just CRUD.
 
-**Live app:** [your-frontend-url.vercel.app]((https://url-shortener-amber-eta.vercel.app/))  
+**Live app:** [https://url-shortener-amber-eta.vercel.app/](#)
 
 > Backend is on Render's free tier, which sleeps after 15 minutes of inactivity — the first request after a while can take 30–60 seconds to wake it up.
 
